@@ -1,0 +1,78 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app-container.light {
+  background: #f1f5f9;
+  color: #111;
+}
+
+.app-container.dark {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+.app-box {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app-container.dark .app-box {
+  background: #334155;
+}
+
+.theme-toggle {
+  float: right;
+  margin-bottom: 10px;
+  background: #10b981;
+  border: none;
+  padding: 8px 14px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: #059669;
+}
+.theme-switch {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.switch {
+  width: 60px;
+  height: 30px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  position: relative;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.switch.dark {
+  background: #0f172a;
+  justify-content: flex-end;
+}
+
+.switch.light {
+  background: #d1fae5;
+  justify-content: flex-start;
+}
+
+.icon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
